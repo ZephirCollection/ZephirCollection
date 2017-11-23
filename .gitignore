@@ -1,3 +1,6 @@
+# Ignore jetbrains
+.idea
+
 # Cache files, generates by Zephir
 .temp/
 .libs/
@@ -24,3 +27,14 @@ ext/mkinstalldirs
 ext/run-tests.php
 ext/.deps
 ext/libtool
+
+# Ignore IDE Stubs Generations
+/ide
+/ext/
+
+# Ignore Vendor
+vendor
+
+# ignore lock & log file
+*.log
+*.lock

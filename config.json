@@ -1,0 +1,27 @@
+{
+  "name": "ZephirCollection",
+  "namespace":"ZephirCollection",
+  "description": "Zephir Code Collections",
+  "version": "1.0.0",
+  "verbose": false,
+  "optimizer-dirs": [
+    "optimizers"
+  ],
+  "package-dependencies": {
+  },
+  "optimizations": {
+    "static-type-inference": true,
+    "static-type-inference-second-pass": true,
+    "local-context-pass": true,
+    "constant-folding": true,
+    "static-constant-class-folding": true
+  },
+  "warnings": {
+    "unused-variable": true,
+    "unused-variable-external": false,
+    "possible-wrong-parameter": true,
+    "possible-wrong-parameter-undefined": false,
+    "nonexistent-function": true,
+    "nonexistent-class": true
+  }
+}
