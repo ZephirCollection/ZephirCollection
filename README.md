@@ -5,7 +5,7 @@ Built with [**Zephir Lang**](https://zephir-lang.com/) to convert on `C` and `PH
 ## Table Of content
 
 -------------------------------------------------------------
-| **Library Name Space** | **Description** | **GitHub URL** |
+| **Name Space**         | **Description** | **GitHub URL** |
 |------------------------|-----------------|----------------|
 | [Psr\Cache](ZephirCollection/Psr/Cache)                   | holds all `interfaces` defined by `PSR-6`.                 | [https://github.com/php-fig/cache](https://github.com/php-fig/cache)               |
 | [Psr\Container](ZephirCollection/Psr/Container)           | holds all `interfaces/classes/traits` related to `PSR-11`. | [https://github.com/php-fig/container](https://github.com/php-fig/container)       |
