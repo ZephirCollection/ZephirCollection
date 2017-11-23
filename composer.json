@@ -1,7 +1,7 @@
 {
-  "name": "zephircollection/psr",
+  "name": "pentagonal/zephircollection",
   "license": "MIT",
-  "description": "Zephir Psr Compatible",
+  "description": "Zephir Code Collections",
   "require": {
     "php": ">= 7.0"
   },
