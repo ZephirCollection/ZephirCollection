@@ -1,6 +1,6 @@
 {
   "name": "Php Library Code Collections",
-  "namespace":"zc",
+  "namespace":"pentagonal_zc",
   "description": "Zephir Code Collections",
   "version": "1.0.0",
   "verbose": false,
