@@ -17,7 +17,6 @@ The package contain prefix name space of:
 | [Psr\Http\Message](zc/Psr/Http/Message)     | holds all `interfaces/classes/traits` related to `PSR-7`.  | [https://github.com/php-fig/http-message](https://github.com/php-fig/http-message) |
 | [Psr\Container](zc/Psr/Container)           | holds all `interfaces/classes/traits` related to `PSR-11`. | [https://github.com/php-fig/container](https://github.com/php-fig/container)       |
 | [Psr\Link](zc/Psr/Link)                     | holds all `interfaces/classes/traits` related to `PSR-13`. | [https://github.com/php-fig/Link](https://github.com/php-fig/Link)                 |
-| [Interop\Container](zc/Interop/Container)   | another implementation that related to `PSR-11` (SLIM v3). | [https://github.com/container-interop/container-interop](https://github.com/container-interop/container-interop) |
 -------------------------------------------------------------
 
 
