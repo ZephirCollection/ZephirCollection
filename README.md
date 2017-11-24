@@ -4,9 +4,7 @@ Built with [**Zephir Lang**](https://zephir-lang.com/) to convert on `C` and `PH
 
 ## Table Of content
 
-The package contain prefix name space of:
-
-```\\ZC```
+The package contains direct name space by developers.
 
 
 -------------------------------------------------------------
