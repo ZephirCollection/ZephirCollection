@@ -112,8 +112,9 @@ final class ClosureContainer
 
     /**
      * if function is internal prevent binding
+     * @return mixed|callable
      */
-    public function __invoke() -> var
+    public function __invoke() -> var|callable
     {
         var ref, args;
         let args = func_get_args();
@@ -133,8 +134,9 @@ final class ClosureContainer
 
     /**
      * @param string name
+     * @return mixed
      */
-    public function __get(name) -> var
+    public function __get(name) -> var|null|callable
     {
         return this->get(name);
     }
