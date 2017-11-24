@@ -1,14 +1,11 @@
 {
-  "name": "pentagonal/zc",
+  "name": "zc/direct",
   "license": "MIT",
   "description": "Zephir Code Collections",
   "require": {
     "php": ">= 7.0"
   },
   "require-dev": {
-    "phalcon/zephir": "^0.10",
-    "nikic/fast-route": "^1.2",
-    "pimple/pimple": "^3.0",
-    "slim/slim": "4.x-dev"
+    "phalcon/zephir": "^0.10"
   }
 }
