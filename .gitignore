@@ -38,3 +38,5 @@ vendor
 # ignore lock & log file
 *.log
 *.lock
+
+build

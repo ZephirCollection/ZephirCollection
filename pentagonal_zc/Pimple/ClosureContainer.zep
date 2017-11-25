@@ -31,16 +31,16 @@ final class ClosureContainer
     /**
      * @var \Closure
      */
-    private closure;
+    protected closure;
     /**
      * @var \stdClass
      */
-    private std;
+    protected std;
 
     /**
      * Closure constructor.
      */
-    private function __construct()
+    protected function __construct()
     {
         let this->std = new \stdClass;
     }
@@ -119,14 +119,13 @@ final class ClosureContainer
         var ref, args;
         let args = func_get_args();
         let ref = new \ReflectionFunction(this->closure);
+        array_unshift(args, this);
         if ! ref->isInternal() {
             let this->closure = \Closure::bind(
                 this->closure,
                 this->std,
                 "\stdClass"
             );
-        } else {
-            array_unshift(args, this);
         }
 
         return call_user_func_array(this->closure, args);

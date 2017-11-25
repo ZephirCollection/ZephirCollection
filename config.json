@@ -4,11 +4,12 @@
   "description": "Zephir Code Collections",
   "version": "1.0.0",
   "verbose": false,
-  "optimizer-dirs": [
-    "optimizers"
+  "author": "pentagonal",
+  "optimizer-dirs": ["optimizers"],
+  "package-dependencies": {},
+  "constants-sources": [],
+  "extra-sources": [
   ],
-  "package-dependencies": {
-  },
   "optimizations": {
     "static-type-inference": true,
     "static-type-inference-second-pass": true,

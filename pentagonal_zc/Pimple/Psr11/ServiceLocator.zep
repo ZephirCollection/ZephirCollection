@@ -16,12 +16,12 @@ class ServiceLocator implements ContainerInterface
     /**
      * @var \Pimple\Container
      */
-    private container;
+    protected container;
 
     /**
      * @var array
      */
-    private aliases = [];
+    protected aliases = [];
 
     /**
      * @param \Pimple\Container container The Container instance used to locate services

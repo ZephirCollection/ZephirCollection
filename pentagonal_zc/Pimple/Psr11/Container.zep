@@ -13,7 +13,7 @@ final class Container implements ContainerInterface
     /**
      * @var \Pimple\Container
      */
-    private container;
+    protected container;
 
     /**
      * Container constructor.

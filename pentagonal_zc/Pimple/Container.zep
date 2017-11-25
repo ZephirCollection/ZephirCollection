@@ -11,32 +11,32 @@ class Container implements \ArrayAccess
     /**
      * @var array|mixed[]|object[]
      */
-    private values = [];
+    protected values = [];
 
     /**
      * @var \SplObjectStorage
      */
-    private factories;
+    protected factories;
 
     /**
      * @var \SplObjectStorage
      */
-    private $protected;
+    protected $protected;
 
     /**
      * @var array|string[]
      */
-    private frozen = [];
+    protected frozen = [];
 
     /**
      * @var array|mixed[]|object[]
      */
-    private raw = [];
+    protected raw = [];
 
     /**
      * @var array|bool[]
      */
-    private keys = [];
+    protected keys = [];
 
     /**
      * Instantiates the container.
@@ -87,6 +87,8 @@ class Container implements \ArrayAccess
      */
     public function offsetGet(string id) -> var
     {
+        var_dump(this->keys);
+        exit();
         if ! isset this->keys[id] {
             throw new Exception\UnknownIdentifierException(id);
         }

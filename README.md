@@ -38,3 +38,5 @@ Please Refer to : [LICENSE](LICENSE)
 About license:
 
 The base license is `MIT`, but on some libraries must be follow the `original libraries` license that contains many original code.
+
+Zephir stil being buggy on PHP 7.

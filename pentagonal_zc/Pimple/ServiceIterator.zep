@@ -11,12 +11,12 @@ final class ServiceIterator implements \Iterator
     /**
      * @var Container
      */
-    private container;
+    protected container;
 
     /**
      * @var array[]|string[]|int[]
      */
-    private ids;
+    protected ids;
 
     /**
      * ServiceIterator constructor.

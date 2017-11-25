@@ -3,7 +3,8 @@
   "license": "MIT",
   "description": "Zephir Code Collections",
   "require": {
-    "php": ">= 7.0"
+    "php": ">= 7.0",
+    "phalcon/cphalcon": "^3.2"
   },
   "require-dev": {
     "phalcon/zephir": "^0.10"
