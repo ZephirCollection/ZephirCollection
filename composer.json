@@ -4,7 +4,8 @@
   "description": "Zephir Code Collections",
   "require": {
     "php": ">= 7.0",
-    "phalcon/cphalcon": "^3.2"
+    "phalcon/cphalcon": "^3.2",
+    "doctrine/dbal": "^2.5"
   },
   "require-dev": {
     "phalcon/zephir": "^0.10"
