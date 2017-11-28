@@ -38,7 +38,7 @@ class Functions
      */
     public static function simpleDispatcher(callable! routeDefinitionCallback, array options = []) -> <Dispatcher>
     {
-        self::createUserFunction();
+        //self::createUserFunction();
         let options = options->merge([
             "routeParser"    : "FastRoute\\RouteParser\\Std",
             "dataGenerator"  : "FastRoute\\DataGenerator\\GroupCountBased",
@@ -72,7 +72,7 @@ class Functions
      */
     public static function cachedDispatcher(callable! routeDefinitionCallback, array options = []) -> <Dispatcher>
     {
-        self::createUserFunction();
+        //self::createUserFunction();
         let options = options->merge([
             "routeParser"    : "FastRoute\\RouteParser\\Std",
             "dataGenerator"  : "FastRoute\\DataGenerator\\GroupCountBased",
@@ -120,31 +120,5 @@ class Functions
         }
 
         return new {classNameDispatcher}(dispatchData);
-    }
-
-    /**
-     * @access Internal
-     */
-    private static function createUserFunction() -> void
-    {
-        if (self::currentCalledCall) {
-            return;
-        }
-
-        let self::currentCalledCall = true;
-        var str;
-        let str ="namespace FastRoute {
-             if (!function_exists(\"FastRoute\simpleDispatcher\")) {
-                 function simpleDispatcher(callable $routeDefinitionCallback, $options = []) {
-                     return \FastRoute\Functions::SimpleDispatcher($routeDefinitionCallback, $options);
-                 }
-             }
-             if (!function_exists(\"FastRoute\cachedDispatcher\")) {
-                 function cachedDispatcher(callable $routeDefinitionCallback, $options = []) {
-                     return \FastRoute\Functions::cachedDispatcher($routeDefinitionCallback, $options);
-                 }
-             }
-          }";
-        eval(str);
     }
 }

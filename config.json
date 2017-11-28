@@ -7,7 +7,9 @@
   "author": "pentagonal",
   "optimizer-dirs": ["optimizers"],
   "package-dependencies": {},
-  "constants-sources": [],
+  "constants-sources": [
+  ],
+  "extra-cflags": "",
   "extra-sources": [
   ],
   "optimizations": {

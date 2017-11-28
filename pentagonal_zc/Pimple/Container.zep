@@ -87,8 +87,6 @@ class Container implements \ArrayAccess
      */
     public function offsetGet(string id) -> var
     {
-        var_dump(this->keys);
-        exit();
         if ! isset this->keys[id] {
             throw new Exception\UnknownIdentifierException(id);
         }
@@ -107,8 +105,7 @@ class Container implements \ArrayAccess
                let method = values[id];
             return this->{method}(this);
         }
-        var raw,
-            val;
+        var raw, val;
         let raw = this->values[id];
         let val = call_user_func(raw, this);
         let this->values[id] = val;
@@ -265,12 +262,13 @@ class Container implements \ArrayAccess
         };
         */
 
-        let extended = \Pimple\ClosureContainer::with(function(<\Pimple\ClosureContainer> closure, c) {
+        let extended = \Zc\ClosureObject::make(function(<\Zc\ClosureObject> closure, c) {
                 return call_user_func_array(closure->get("callable"), [
                     call_user_func(closure->get("factory"), c),
                     c
                 ]);
-            }, [ "callable": $callable, "factory": factory]);
+            })
+            ->set("callable", $callable)->set("factory", factory);
 
         if isset this->factories[factory]  {
             this->factories->detach(factory);
@@ -288,7 +286,7 @@ class Container implements \ArrayAccess
      */
     public function keys() -> array
     {
-        return array_keys(this->values);
+        return this->values->keys();
     }
 
     /**
